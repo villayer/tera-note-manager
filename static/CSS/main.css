@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');  
+
+* {
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #002b36;
+}
+
+.big {
+  text-align: center;
+  font-size: 2rem;
+  color: #839496;
+}
+
+.space {
+  margin: 15px;
+}
+
+.center {
+    margin: auto;
+}
+
+h1 {
+  color: #839496;
+}
+
+hr {
+    width: 40%;
+}
+
+/* .customers {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.customers td, .customers th {
+  border: 1px solid #002b36;
+  padding: 8px;
+}
+
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #002b36;
+  color: white;
+} */
+
+
+.pallet {
+    box-shadow: 2px 2px 12px black;
+    border-radius: 20pt;
+    border: 0;
+    width: fit-content;
+    padding: 20px;
+}
+
+table { 
+    border: 2px solid #ddd;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 4px;
+    border-spacing: 0px;
+    width: 100%;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: separate;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th, td {
+    padding: 5px 4px 6px 4px; 
+    text-align: left;
+    vertical-align: top;
+    border-left: 2px solid #ddd;    
+    text-align: center;
+    color: #839496;
+    font-size: 20px;
+}
+td {
+    border-top: 2px solid #ddd;    
+}
+thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+    border-radius: 4px 0 0 0;
+}
+thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+}
+
+
+a {
+  color: aqua;
+}
+
+
+input {
+    border-radius: 20pt;
+    border: 0;
+    padding: 10px;
+    width: fit-content;
+    margin-left: 35px;
+    background-color: #002b36;
+    outline: none;
+    color: aqua;
+}

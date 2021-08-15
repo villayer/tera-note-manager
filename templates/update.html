@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<title>Note Manager</title>
+
+{% endblock %}
+
+{% block body %}
+<div class="center pallet">
+    <p class="big">Update Note</p> 
+    <hr>
+    <form action="/update/{{note.id}}" method="POST">
+        <input type="text" name="content" id="content" value="{{note.content}}">
+        <input type="submit" value="Update Note">
+    </form>
+</div>
+
+{% endblock %}

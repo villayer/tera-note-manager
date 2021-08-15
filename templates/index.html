@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<title>Note Manager</title>
+
+{% endblock %}
+
+{% block body %}
+<div class="center">
+    <div class="pallet">
+        <p class="big">Note Manager</p>
+        {% if notes|length < 1 %}
+            <p class="big">No notes avalible, create one!</p>
+        {% else %}
+        <hr>
+        <div class="space">
+            <table>
+                <tr>
+                    <th>Added Notes</th>
+                    <th>Date Added</th>
+                    <th>Modify Note</th>
+                </tr>
+                {% for note in notes %}
+                <tr>
+                    <td>{{ note.content }}</td>
+                    <td>{{ note.date_created.date() }}</td>
+                    <td>
+                        <a href="/delete/{{note.id}}">delete</a>
+                        <br>
+                        <a href="/update/{{note.id}}">update</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+
+                {% endif %}
+        <form action="/" method="POST">
+            <input type="text" name="content" id="content" placeholder="type your note here">
+            <input type="submit" value="Add Note">
+        </form>
+    </div>
+    <p style="color: aqua;">This is proprietary software, You cannot have the source code cuck! <br>Sincerely yours
+        —Tera</p>
+</div>
+
+{% endblock %}

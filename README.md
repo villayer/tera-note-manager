@@ -1,5 +1,5 @@
 # tera-note-manager (mirrored from heroku)
-a note manager web app created using flask and python 
+a note manager web app created using flask and python, web app hosted at [heroku](https://tera-note-manager.herokuapp.com/) 
 
 ## instructions to run
 - make sure you have the requirments installed: `flask` `SQLALCHEMY` `gunicorn`
